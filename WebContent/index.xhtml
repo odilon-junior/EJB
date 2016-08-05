@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<!--  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Sketch"
+		rel="stylesheet" />
+</h:head>
+<h:body>
+	<div class="header">
+		<div class="logo">CAD</div>
+	</div>
+	<div class="main">
+		<h:form id="cadastrar">
+			<ul>
+				<li><h:outputLabel>Nome:</h:outputLabel> <h:inputText size="40"
+						value="#{livroMBean.livro.nome}" /></li>
+				<li><h:outputLabel>Isbn:</h:outputLabel> <h:inputText size="20"
+						value="#{livroMBean.livro.isbn}"></h:inputText></li>
+				<li><h:outputLabel>Enredo:</h:outputLabel> <h:inputTextarea
+						rows="4" cols="50" value="#{livroMBean.livro.enredo}"></h:inputTextarea></li>
+				<li><h:outputLabel>Autores:</h:outputLabel> <h:selectManyListbox></h:selectManyListbox></li>
+				<li><h:commandButton value="Gravar"
+						action="#{livroMBean.salvar}" styleClass="btn btn-primary"></h:commandButton></li>
+			</ul>
+		</h:form>
+	</div>
+</h:body>
+</html>
