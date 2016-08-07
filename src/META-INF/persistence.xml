@@ -5,7 +5,7 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>java:jboss/datasources/MySqlDS</jta-data-source>
 
-		<class>br.com.ejb.model.Livrossdcd</class>
+		<class>br.com.ejb.model.Livro</class>
 		<class>br.com.ejb.model.Autor</class>
 
 
